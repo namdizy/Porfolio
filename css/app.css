@@ -1,0 +1,278 @@
+/* CSS used here will be applied after bootstrap.css */
+
+
+/* For desktop screens */
+@media (min-width: 768px) {
+    html{
+        height: 95%;
+    }
+    body{
+        height: 100%;
+        background-color:white; 
+    }
+    
+    
+    /* Styling for index*/
+    
+    .wrapper, .row, .app-col, .navbar, .the-view, .home-wrapper, .app-intro{
+        height: 100%;
+    }
+    
+
+    .app-col{
+        padding: 0px;
+        
+    }
+    
+    .navbar{
+        margin: 0px;
+        border: none;
+        background-color: white;
+        display: flex;
+    }
+
+    .navbar-brand{
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        margin: auto;
+        align-self:flex-start;
+    }
+    
+    .navbar-brand>img:hover{
+    
+    }
+
+    .navbar-nav {
+        margin-top: 30em;
+        display: flex;
+        flex-direction: column; 
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;   
+    }
+
+    .navbar-nav > li{
+        text-align: left;
+        font-family: 'Lemon', cursive;
+    }
+    .navbar-nav > li>a{
+        font-size: 14px;
+        padding: 4px;
+        transition: all .1s linear;
+    }
+    
+    .navbar-nav>li>a:hover{
+        font-size: 15px;
+        color: red;
+        text-decoration: line-through;
+    }
+    
+    .active{
+        text-decoration: line-through;
+        font-size: 15px;
+        font-weight: bold;
+        color: red; 
+    }
+  
+    .app-intro{
+        background-color: white;
+        display:flex;
+        align-items: center;
+    }
+    
+    .app-intro>h1{
+        font-family: 'Rancho', cursive;
+        font-size: 5em;
+        color: red;
+        margin: 0 auto;
+        width: 1.6em;
+        white-space:nowrap;
+        overflow: hidden;
+        border-right: .07em solid black;
+        -webkit-animation: typing 4s steps(6, end),
+                            blink-caret 1s step-end infinite;
+        -moz-animation: typing 4s steps(6, end),
+                        blink-caret 1s step-end infinite;
+        -o-animation: typing 4s steps(6, end),
+                        blink-caret 1s step-end infinite;
+        -ms-animation: typing 4s steps(6, end),
+                        blink-caret 1s step-end infinite;
+        animation: typing 4s steps(6, end),
+                        blink-caret 1s step-end infinite;
+    }
+    
+    @keyframes typing{
+        from { width: 0 }
+        to { width:1.6em }
+    }
+    @-webkit-keyframes typing {
+        from { width: 0 }
+        to { width:1.6em }
+    }
+
+    @-moz-keyframes typing {
+        from { width: 0 }
+        to { width:1.6em }
+    }
+    
+    @keyframes blink-caret{
+        from, to { border-color: transparent }
+        50% { border-color: black }   
+    }
+    @-webkit-keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black }
+    }
+
+    @-moz-keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: black }
+    }
+
+      
+    .app-intro>p{
+        font-family: cursive;
+    }
+    
+    .app-icons{
+        margin: 30em auto 0 3em;
+    }
+    .app-icons>a{
+        padding: 4px;
+    }
+    
+     /* End of styling for index*/
+    
+    /* styling for contact view */
+    .contact-wrapper{
+        position: relative;
+    }
+    
+    .lets-talk{
+        font-size: 20px;    
+        padding: 1% 1% 0.5% 1%;
+        color: #FF5733;
+        font-family: 'Sigmar One', cursive;
+    }
+    
+    .line-break{
+        background-color: grey;
+        height: 1px;
+        margin: 0 1%;
+    }
+    
+    .contact-flex-form{
+        background-color: #efefef;
+        border-radius: 10px;
+        margin-top: 10%;
+        box-shadow: 0.2px 0.2px 8px black;
+    }
+       
+    .contact-header{
+        margin: 0 13px;   
+    }
+    
+    .contact-form-header{
+        font-family: 'Lemon', cursive; 
+    }
+    
+    .contact-header >p{
+        font-family: 'Bad Script', cursive;
+        font-size: 15px;
+    }
+    .contact-margin{
+        margin-top: 10px;
+    }
+    
+    .btn{
+        margin: 10px 0 10px 15px;
+    }
+    
+    .contact-information{
+        background-color: #939393;
+        border-radius: 6px;
+        position: absolute;
+        height: auto;
+        margin: 20% 0 0 64%; 
+        padding: 1% 0 1% 3%;
+        box-shadow: 1px 1px 8px black;
+    }
+    
+    .info-phone-number{
+        margin-left: 15%;
+    }
+    
+    .info-email-add{
+        margin-left: 21%;
+    }
+    
+    .info-label{
+        font-family: 'Bad Script', cursive;    
+    }
+    .info-social{
+        margin-top: 5%
+    }
+     /* End of styling for contact view */
+    
+     /* styling for about me view */
+    
+    .about-wrapper{
+        position: relative;    
+    }
+    
+    .about-me{
+        background-color: #efefef;
+        margin-top: 10%;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        border-radius: 8px; 
+        box-shadow: 1px 1px 10px black;
+    
+    }
+    
+    .about-me > h3, .about-me>p{
+        font-family: 'Lemon', cursive; 
+    }   
+    
+    .my-pic{
+        background-color: #939393;
+        border-radius: 6px; 
+        position: absolute;
+        height: auto;
+        margin: 14% 0 0 20%;
+    }
+    .pic{
+        width: 100% ;
+    }
+    
+    
+     /* End of styling for contact view */
+
+}
+
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    body{
+        background-color: white; 
+    }
+    
+    .navbar{
+        background-color: white;   
+    }
+    
+    .navbar-brand>img{
+    content: url("../img/NJK_30.png");
+    }
+    
+    .app-intro{
+        background-color: white;
+        font-family: 'Lemon', cursive;
+        color: #a0a0a0;    
+    }
+    .app-intro>p{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+}
